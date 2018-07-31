@@ -18,14 +18,12 @@ const UserSchema = new Schema({
   avatar: {
     type: String
   },
-  date: {
-    type: Date,
-    default: Date.now
-  },
-  groups: {
-    type: Schema.Types.ObjectId,
-    ref: "group"
-  }
+  groups: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "group"
+    }
+  ]
 });
 
 module.exports = User = mongoose.model("users", UserSchema);
