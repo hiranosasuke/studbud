@@ -1,0 +1,42 @@
+{
+  "name": "studbud-backend",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "dev": "SET NODE_ENV=development & nodemon index.js",
+    "start": "babel-node index.js",
+    "clean": "rm -rf build && mkdir build"
+  },
+  "repository": " ",
+  "author": "Katertots",
+  "license": "MIT",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "gravatar": "^1.6.0",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "4.7.7",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "react-native-bcrypt": "^2.4.0",
+    "validator": "^10.4.0"
+  },
+  "devDependencies": {
+    "eslint-config-equimper": "^2.2.2",
+    "nodemon": "^1.17.5"
+  },
+  "engines": {
+    "node": "8.9.1",
+    "yarn": "1.9.2",
+    "npm": "5.5.1"
+  }
+}
